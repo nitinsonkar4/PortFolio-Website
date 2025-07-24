@@ -119,7 +119,7 @@ const Navbar = () => {
               Contact
             </a>
             <a
-              href="/Nitin-Sonkar2405.pdf"
+              href="/Nitin-Sonkar-FlowCV-Resume-20250724.pdf"
               download="Nitin_Sonkar_Resume.pdf"
               className="block px-4 py-2 text-center bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition"
               onClick={() => setIsOpen(false)}
