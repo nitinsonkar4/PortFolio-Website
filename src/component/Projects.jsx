@@ -15,19 +15,21 @@ const Projects = () => {
               title: "Personal Portfolio Website",
               description:
                 "A modern and responsive portfolio website built using React and Tailwind CSS to showcase my skills, projects, and resume with smooth navigation and mobile-friendly design.",
+              url: "https://portfolio-website-nitin-sonkar.netlify.app/",
             },
-
             {
               title: "E-commerce Website",
               description:
                 "A full-stack e-commerce web app with product listings, cart, and payment integration.",
+              url: "https://your-ecommerce-url.com",
             },
             {
               title: "Weather App",
               description:
                 "A React-based weather application that allows users to search for real-time weather information using OpenWeatherMap API.",
+              url: "https://your-weatherapp-url.com",
             },
-          ].map(({ title, description }) => (
+          ].map(({ title, description, url }) => (
             <div
               key={title}
               className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg transition"
@@ -39,11 +41,10 @@ const Projects = () => {
                 {description}
               </p>
 
-              {/* “View Project” button without navigation */}
               <button
                 type="button"
                 className="inline-flex items-center gap-1 text-indigo-600 hover:text-indigo-700 font-medium focus:outline-none"
-                onClick={() => {}}
+                onClick={() => window.open(url, "_blank")}
               >
                 View Project &rarr;
               </button>
